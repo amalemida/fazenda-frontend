@@ -1,0 +1,57 @@
+import Corpo from "@/components/layout/Corpo";
+import Menu from "@/components/template/Menu";
+import styles from "../styles/Fazenda.module.css";
+import Rodape from "@/components/layout/Rodape";
+import { useRouter } from "next/router";
+import { useAppContext } from "@/data/context/AppContext";
+import Culturas from "@/components/Culturas/Cultura";
+import Temperaturas from "@/components/Temperaturas/Temperaturas";
+import Sensores from "@/components/Sensores/Sensores";
+
+export default function fazenda() {
+  const router = useRouter();
+  const id = router.query.id;
+
+  const dados = useAppContext();
+
+  const renderiza = () => {
+    if (!id) {
+      return (
+        <Corpo titulo="Bem vindo!">
+          <div>Cadastro de culturas, temperaturas, sensores</div>
+          <h2>{dados.nome}</h2>
+        </Corpo>
+      );
+    }
+
+      if (id === "culturas") {
+        return (
+          <Corpo titulo="Cadastro de Culturas">
+            <Culturas />
+          </Corpo>
+        );
+      }
+      if (id === "temperaturas") {
+        return (
+          <Corpo titulo="Cadastro de Temperaturas">
+            <Temperaturas/>
+          </Corpo>
+        );
+      }
+      if (id === "sensores") {
+        return (
+          <Corpo titulo="Cadastro de Sensores">
+            <Sensores/>
+          </Corpo>
+        );
+      }
+    } 
+    
+  return (
+    <div className={styles.fazenda}>
+      <Menu />
+      {renderiza()}
+      <Rodape />
+    </div>
+  )
+}
