@@ -6,10 +6,10 @@ export default function Temperaturas() {
   const urlAPI = "http://localhost:5088/api/Temperatura/";
   const temperaturaIni = {
     id: 0,
+    data: "",
     tmax: 0.0,
     tmin: 0.0,
-    data: "",
-    hora: "",
+    tmedia: 0.0,
     sensorId: 0,
   };
   const [temperatura, setTemperatura] = useState(temperaturaIni);

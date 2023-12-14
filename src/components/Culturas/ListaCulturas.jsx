@@ -23,11 +23,29 @@ export default function ListaCulturas(props) {
               <th className={styles.tabTituloCultura}>GD</th>
               <th className={styles.tabTituloCultura}>SGD</th>
               <th className={styles.tabTituloCultura}>Sensor</th>
+              <th className={styles.tabTituloCultura}>Irrigar</th>
+              <th className={styles.tabTituloCultura}>Colher</th>
               <th></th>
             </tr>
           </thead>
           <tbody>
             {lista.map((cultura, i) => {
+              let mensagemColher = ''
+              let corColher = ''
+              if (cultura.colher) {
+                mensagemColher = 'Pode colher'
+                corColher = styles.verde;
+              } else {
+                mensagemColher = 'Ainda não pode colher'
+              }
+              let mensagemIrrigar = ''
+              let corIrrigar = '';
+              if (cultura.irrigar) {
+                mensagemIrrigar = 'Hora de irrigar'
+                corIrrigar = styles.vermelho;
+              } else {
+                mensagemIrrigar = 'Umidade adequada'
+              }
               return (
                 <tr key={cultura.id}>
                   <td> {cultura.id} </td>
@@ -36,6 +54,8 @@ export default function ListaCulturas(props) {
                   <td> {cultura.gd} </td>
                   <td> {cultura.sgd} </td>
                   <td> {cultura.sensorId} </td>
+                  <td className={corIrrigar}> {mensagemIrrigar} </td>
+                  <td className={corColher}> {mensagemColher} </td>
                   <td>
                     <button
                       className={styles.linhaButton}

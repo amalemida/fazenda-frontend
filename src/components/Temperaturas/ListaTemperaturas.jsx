@@ -17,11 +17,10 @@ export default function ListaTemperaturas(props) {
       <table className={styles.tabTemperaturas}>
         <thead>
           <tr className={styles.cabecTabela}>
-            <th className={styles.tabTituloTemperatura}>Id</th>
+            <th className={styles.tabTituloTemperatura}>Data</th>
             <th className={styles.tabTituloTemperatura}>Tmax</th>
             <th className={styles.tabTituloTemperatura}>Tmin</th>
-            <th className={styles.tabTituloTemperatura}>Data</th>
-            <th className={styles.tabTituloTemperatura}>Hora</th>
+            <th className={styles.tabTituloTemperatura}>Tmedia</th>
             <th className={styles.tabTituloTemperatura}>Sensor</th>
             <th></th>
           </tr>
@@ -30,11 +29,10 @@ export default function ListaTemperaturas(props) {
           {lista.map((temperatura, i) => {
             return (
               <tr key={temperatura.id}>
-                <td> {temperatura.id} </td>
+                <td> {temperatura.data} </td>
                 <td> {temperatura.tmax} </td>
                 <td> {temperatura.tmin} </td>
-                <td> {temperatura.data} </td>
-                <td> {temperatura.hora} </td>
+                <td> {temperatura.tmedia} </td>
                 <td> {temperatura.sensorId} </td>
                 <td>
                   <button

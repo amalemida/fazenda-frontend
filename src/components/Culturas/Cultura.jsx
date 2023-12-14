@@ -11,7 +11,9 @@ export default function Culturas() {
     tbasal: 0.0,
     gd: 0.0,
     sgd: 0.0,
-    sensorId: 0
+    sensorId: 0,
+    colher: false,
+    irrigar: false
   };
   const [cultura, setCultura] = useState(culturaIni);
   function carregar(culturaForm) {

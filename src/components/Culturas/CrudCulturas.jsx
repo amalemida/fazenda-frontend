@@ -8,7 +8,7 @@ export default function CrudCulturas(props) {
   const urlAPI = "http://localhost:5088/api/Cultura/";
   const [sensores, setSensores] = useState([]);
   const [cultura, setCultura] = useState(props.culturaForm);
-  const initialState = { id: 0,  nome: "", tbasal: 0.0, gb: 0.0, gd:0.0, sgd:.0, sensorId: 0 };
+  const initialState = { id: 0,  nome: "", tbasal: 0.0, gb: 0.0, gd:0.0, sgd:.0, sensorId: 0, irrigar: false, colher: false };
   const limpar = () => {
     setCultura(initialState);
   };
@@ -74,7 +74,7 @@ export default function CrudCulturas(props) {
         value={props.culturaForm.sgd}
         onChange={(e) => atualizaCampo(e)}
       />
-     <label className={styles.labelForm}> Sensor: </label>
+      <label className={styles.labelForm}> Sensor: </label>
       <select
         name="sensorId"
         className={styles.formInput}
