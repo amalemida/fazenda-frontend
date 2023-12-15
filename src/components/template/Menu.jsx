@@ -8,6 +8,7 @@ export default function Menu(props) {
         <Link href="/fazenda?id=culturas">Culturas</Link>
         <Link href="/fazenda?id=temperaturas">Temperaturas</Link>
         <Link href="/fazenda?id=sensores">Sensores</Link>
+        <Link href="/fazenda?id=plantios">Plantios</Link>
       </div>
     </nav>
   );

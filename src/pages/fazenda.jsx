@@ -7,6 +7,7 @@ import { useAppContext } from "@/data/context/AppContext";
 import Culturas from "@/components/Culturas/Cultura";
 import Temperaturas from "@/components/Temperaturas/Temperaturas";
 import Sensores from "@/components/Sensores/Sensores";
+import Plantios from "@/components/Plantio/Plantio";
 
 export default function fazenda() {
   const router = useRouter();
@@ -18,7 +19,7 @@ export default function fazenda() {
     if (!id) {
       return (
         <Corpo titulo="Bem vindo!">
-          <div>Cadastro de culturas, temperaturas, sensores</div>
+
           <h2>{dados.nome}</h2>
         </Corpo>
       );
@@ -42,6 +43,13 @@ export default function fazenda() {
         return (
           <Corpo titulo="Cadastro de Sensores">
             <Sensores/>
+          </Corpo>
+        );
+      }
+      if (id === "plantios") {
+        return (
+          <Corpo titulo="Cadastro de Plantios">
+            <Plantios/>
           </Corpo>
         );
       }
