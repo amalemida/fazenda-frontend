@@ -14,8 +14,8 @@
 }
 
 .cabecTabela {
-  color: white;
-  background-color: black;
+  color: black;
+  background-color: rgb(216, 211, 144);
   font-size: 20px;
   text-align: left;
 }
@@ -25,11 +25,23 @@
 }
 
 .tabTituloCultura {
-  width: 215px;
+  width: 200px;
+}
+
+.tabTituloCultura {
+  width: 150px;
+}
+
+.tabTituloId {
+  width: 150px;
+}
+
+.tabTituloSensor {
+  width: 150px;
 }
 
 .tabTituloNome {
-  width: 400px;
+  width: 300px;
 }
 
 .inputText {
@@ -43,25 +55,6 @@
   padding: 12px;
   width: 50px;
 }
-
-.btnSalvar {
-  background-color: lightblue;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  margin: 5px 5px 5px 30px;
-}
-
-.btnCancelar {
-  background-color: gainsboro;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  margin: 5px;
-}
-
 .labelForm {
   padding: 10px;
 }
@@ -78,13 +71,49 @@
   cursor: pointer;
   margin: 5px 5px 5px 30px;
 }
+
 .btnCancelar {
-  background-color: gainsboro;
+  background-color: lightblue;
   padding: 12px 20px;
   border: none;
   border-radius: 4px;
   cursor: pointer;
   margin: 5px;
+}
+
+.btnEditar {
+  background-color: lightblue;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 5px 5px 5px 30px;
+
+}.btnRemover {
+  background-color: lightblue;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 5px 5px 5px 30px;
+}
+
+.btnTemperatura {
+  background-color: lightblue;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 5px 5px 5px 30px;
+}
+
+.btnVoltar {
+  background-color: lightblue;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 5px 5px 5px 30px;
 }
 
 .tabCulturas {
@@ -97,4 +126,8 @@
 
 .vermelho {
   color: red;
+}
+
+.H3 {
+  font-size: large;
 }

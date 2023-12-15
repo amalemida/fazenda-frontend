@@ -17,7 +17,7 @@ export default function ListaSensores(props) {
         <table className={styles.tabSensores}>
           <thead>
             <tr className={styles.cabecTabela}>
-              <th className={styles.tabTituloSensor}>Id</th>
+              <th className={styles.tabTituloId}>Id</th>
               <th className={styles.tabTituloSensor}>Descrição</th>
               <th></th>
             </tr>

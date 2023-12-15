@@ -14,8 +14,8 @@
 }
 
 .cabecTabela {
-  color: white;
-  background-color: black;
+  color: black;
+  background-color: rgb(216, 211, 144);
   font-size: 20px;
   text-align: left;
 }
@@ -28,8 +28,8 @@
   width: 250px;
 }
 
-.tabTituloNome {
-  width: 400px;
+.tabTituloId {
+  width: 100px;
 }
 
 .inputText {

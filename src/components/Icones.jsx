@@ -41,3 +41,36 @@ export const IconeLixo = (
     />
   </svg>
 );
+export const IconeVoltar = (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    fill="none"
+    viewBox="0 0 24 24"
+    stroke-width="1.5"
+    stroke="currentColor"
+    className="w-6 h-6"
+  >
+    <path
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      d="M11 19l-7-7 7-7m8 14h-16"
+    />
+  </svg>
+);
+export const IconeLupa = (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    fill="none"
+    viewBox="0 0 24 24"
+    stroke-width="1.5"
+    stroke="currentColor"
+    className="w-6 h-6"
+  >
+    <path
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      d="M21 21l-4.35-4.35M15 10A5 5 0 105 10a5 5 0 0010 0z"
+    />
+  </svg>
+);
+

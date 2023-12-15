@@ -8,12 +8,9 @@
     "content"
     "footer";
   height: 100vh;
-  background-color: #f5f5f5;
+  background-image: url('/fazenda.jpg');
+  background-size: cover;
   align-items: start;
-}
-
-nav.menu {
-  grid-area: menu;
 }
 
 div.content {
@@ -35,6 +32,7 @@ nav.menu {
   background-color: #bdbbbb;
   display: flex;
   justify-content: space-between;
+  grid-area: menu;
 }
 
 nav.menu a {
