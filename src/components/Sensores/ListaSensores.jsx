@@ -36,13 +36,6 @@ export default function ListaSensores(props) {
                     >
                       {IconeEdicao}
                     </button>
-                    <button
-                      className={styles.linhaButton}
-                      style={{ color: "red" }}
-                      onClick={() => props.remover(sensor)}
-                    >
-                      {IconeLixo}
-                    </button>
                   </td>
                 </tr>
               );

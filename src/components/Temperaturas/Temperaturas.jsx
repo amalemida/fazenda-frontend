@@ -28,7 +28,6 @@ export default function Temperaturas() {
   };
   return (
     <>
-      <CrudTemperaturas temperaturaForm={temperatura} temperaturaSet={setTemperatura} />
       <ListaTemperaturas carregar={setTemperatura} remover={remover} />
     </>
   );

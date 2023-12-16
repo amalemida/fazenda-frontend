@@ -12,7 +12,7 @@ export default function CrudSensores(props) {
   const salvar = () => {
     const dadosSensor = props.sensorForm;
     dadosSensor.c = Number(dadosSensor.id);
-    const metodo = dadosSensor.id ? "put" : "post";
+    const metodo = dadosSensor.id ? "put" : "delete";
     const url = dadosSensor.id ? `${urlAPI}${dadosSensor.id}` : urlAPI;
     console.log("metodo do salvar: " + metodo + url);
     axios[metodo](url, dadosSensor).then((resp) => {
@@ -43,9 +43,6 @@ export default function CrudSensores(props) {
       <button className={styles.btnSalvar} onClick={(e) => salvar(e)}>
         Salvar
       </button>
-      <button className={styles.btnCancelar} onClick={(e) => limpar(e)}>
-        Cancelar
-      </button>
-    </div>
+   </div>
   );
 }

@@ -74,27 +74,16 @@ export default function CrudTemperaturas(props) {
         onChange={(e) => atualizaCampo(e)}
       />
       <label className={styles.labelForm}> Sensor: </label>
-      <select
-        name="sensorId"
+      <input
+        type="number"
+        id="sensorId"
         className={styles.formInput}
-        value={temperatura.sensorId}
-        onChange={atualizaCampo}
-      >
-        {sensores.length > 0 && (
-          <>
-            {sensores.map((sensor) => (
-              <option key={sensor.id} value={sensor.id}>
-                {sensor.id}
-              </option>
-            ))}
-          </>
-        )}
-      </select>
+        name="sensorId"
+        value={props.temperaturaForm.sensorId}
+        onChange={(e) => atualizaCampo(e)}
+      />
       <button className={styles.btnSalvar} onClick={(e) => salvar(e)}>
         Salvar
-      </button>
-      <button className={styles.btnCancelar} onClick={(e) => limpar(e)}>
-        Cancelar
       </button>
     </div>
   );

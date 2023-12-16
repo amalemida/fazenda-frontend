@@ -30,7 +30,7 @@ export default function CrudPlantios(props) {
   return (
     <div className={styles.incluiContainer}>
       
-      <label className={styles.labelForm}> Data de inicio do plantio: </label>
+      <label className={styles.labelForm}> Data de inicio do plantio (aaaa/mm/dd): </label>
       <input
         type="text"
         id="dataInicio"
@@ -40,7 +40,7 @@ export default function CrudPlantios(props) {
         onChange={(e) => atualizaCampo(e)}
       />
 
-      <label className={styles.labelForm}> Data do fim do plantio: </label>
+      <label className={styles.labelForm}> Data do fim do plantio (aaaa/mm/dd): </label>
       <input
         type="text"
         id="dataFim"
@@ -53,9 +53,9 @@ export default function CrudPlantios(props) {
       <button className={styles.btnSalvar} onClick={(e) => salvar(e)}>
         Salvar
       </button>
-      <button className={styles.btnCancelar} onClick={(e) => limpar(e)}>
+      {/* <button className={styles.btnCancelar} onClick={(e) => limpar(e)}>
         Cancelar
-      </button>
+      </button> */}
     </div>
   );
 }

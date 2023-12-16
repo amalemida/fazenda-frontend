@@ -49,18 +49,18 @@ export default function ListaCulturas(props) {
             let mensagemColher = "";
             let corColher = "";
             if (cultura.colher) {
-              mensagemColher = "Pode colher";
+              mensagemColher = "Pronto para colher";
               corColher = styles.verde;
             } else {
-              mensagemColher = "Ainda não pode colher";
+              mensagemColher = "Não está na hora de  colher";
             }
             let mensagemIrrigar = "";
             let corIrrigar = "";
             if (cultura.irrigar) {
-              mensagemIrrigar = "Hora de irrigar";
+              mensagemIrrigar = "Irrigando";
               corIrrigar = styles.vermelho;
             } else {
-              mensagemIrrigar = "Umidade adequada";
+              mensagemIrrigar = "Umidade Ok";
             }
 
             if (culturaSelecionada && cultura.id !== culturaSelecionada.id) {

@@ -34,14 +34,14 @@ export default function fazenda() {
       }
       if (id === "temperaturas") {
         return (
-          <Corpo titulo="Cadastro de Temperaturas">
+          <Corpo titulo="Histórico de Temperaturas">
             <Temperaturas/>
           </Corpo>
         );
       }
       if (id === "sensores") {
         return (
-          <Corpo titulo="Cadastro de Sensores">
+          <Corpo titulo="Controle dos Sensores">
             <Sensores/>
           </Corpo>
         );

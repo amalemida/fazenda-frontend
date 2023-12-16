@@ -49,7 +49,7 @@ export default function CrudCulturas(props) {
       />
       <label> Tbasal: </label>
       <input
-        type="text"
+        type="number"
         id="tbasal"
         className={styles.formInput}
         name="tbasal"
@@ -64,38 +64,19 @@ export default function CrudCulturas(props) {
         name="gd"
         value={props.culturaForm.gd}
         onChange={(e) => atualizaCampo(e)}
+        
       />
-      <label> SGD: </label>
+      <label> Sensor: </label>
       <input
         type="number"
-        id="sgd"
+        id="sensorId"
         className={styles.formInput}
-        name="sgd"
-        value={props.culturaForm.sgd}
+        name="sensorId"
+        value={props.culturaForm.sensorId}
         onChange={(e) => atualizaCampo(e)}
       />
-      <label className={styles.labelForm}> Sensor: </label>
-      <select
-        name="sensorId"
-        className={styles.formInput}
-        value={cultura.sensorId}
-        onChange={atualizaCampo}
-      >
-        {sensores.length > 0 && (
-          <>
-            {sensores.map((sensor) => (
-              <option key={sensor.id} value={sensor.id}>
-                {sensor.id}
-              </option>
-            ))}
-          </>
-        )}
-      </select>
       <button className={styles.btnSalvar} onClick={(e) => salvar(e)}>
         Salvar
-      </button>
-      <button className={styles.btnCancelar} onClick={(e) => limpar(e)}>
-        Cancelar
       </button>
     </div>
   );

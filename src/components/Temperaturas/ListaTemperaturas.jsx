@@ -35,7 +35,7 @@ export default function ListaTemperaturas(props) {
                 <td> {temperatura.tmedia} </td>
                 <td> {temperatura.sensorId} </td>
                 <td>
-                  <button
+                  {/* <button
                     className={styles.linhaButton}
                     style={{ color: "blue" }}
                     onClick={() => props.carregar(temperatura)}
@@ -48,7 +48,7 @@ export default function ListaTemperaturas(props) {
                     onClick={() => props.remover(temperatura)}
                   >
                     {IconeLixo}
-                  </button>
+                  </button> */}
                 </td>
               </tr>
             );
